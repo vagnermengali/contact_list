@@ -8,7 +8,7 @@ import { FaMapMarkerAlt, FaPen, FaTrash, FaEllipsisV, FaCheck } from "react-icon
 import { Context as ContextPage, } from "@/context/pageContext";
 
 const Card = () => {
-  const { listContact, deleteContact, patchContact, handleClickContact } = useContext(ContextUser)
+  const { listContact, deleteContact, patchContact } = useContext(ContextUser)
   const { showDropdownContactEdit } = useContext(ContextPage)
 
   interface DataContact {

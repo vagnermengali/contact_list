@@ -1,6 +1,6 @@
 import { NextRouter, useRouter } from 'next/router'
 import { useState, createContext, ReactNode, Dispatch, SetStateAction, useEffect, useContext } from 'react';
-import Api from "@/services/api";
+import Api from "../services/api";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Context as ContextPage } from "@/context/pageContext";
@@ -185,7 +185,7 @@ const UserProvider = ({ children }: IUserProvider) => {
             });
     };
 
-    const patchUser = (data: ContactDataPatch) => {
+    const patchUser = (data: UserDataPatch) => {
         Api.patch<UserResponse>(`/users/update/`, data, {
             headers: {
                 Authorization: `Bearer ${token}`

@@ -18,7 +18,7 @@ function Header() {
                     <div className="profile" onClick={() => handleClickdropDownProfile()}>
                         <a onClick={() => handleClickdropDownProfile()}>
                             <div className="div-img">
-                                <Image src={user.avatar_url} className="img" width={50} height={50} alt="logo"/>
+                                <Image src={user.avatar_url} className="img" width={55} height={55} alt="logo"/>
                             </div>
                             <div className="tooltip">
                                 <button onClick={() => router.push("/dashboard")}><FaThLarge />ㅤDashboard</button>

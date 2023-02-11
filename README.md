@@ -24,13 +24,13 @@ A url base da api é http://localhost:3000
 <p>1. Clone o repositório:</p>
 
 ```
-git clone https://github.com/vagnermengali/contact_list
+git clone https://github.com/vagnermengali/contact-list
 ```
 
 <p>2. Adentre na pasta raiz do projeto:</p>
   
 ```
-cd contact_list/backend
+cd contact-list/backend
 ```
 <p>3. Instale as dependências do projeto:</p>
 
@@ -74,13 +74,13 @@ A url base da interface é http://localhost:3001
 <p>1. Clone o repositório:</p>
 
 ```
-git clone https://github.com/vagnermengali/contact_list
+git clone https://github.com/vagnermengali/contact-list
 ```
 
 <p>2. Adentre na pasta raiz do projeto:</p>
   
 ```
-cd contact_list/frontend
+cd contact-list/frontend
 ```
 <p>3. Crie sua node module:</p>
   

@@ -11,8 +11,7 @@ const Register = () => {
         <div className="container">
           <div className="container-left">
             <div className="content-up">
-              <h1>
-                Don't waste time and <span>come join us.</span></h1>
+              <h1>Dont waste time and <span> come join us</span></h1>
               <FormRegister />
             </div>
           </div>

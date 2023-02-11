@@ -1,7 +1,7 @@
 ##
 
 <h1 align="center">
-  contact_list
+  Contact list
 </h1>
 
 <p align = "center">

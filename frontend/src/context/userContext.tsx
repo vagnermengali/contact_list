@@ -1,6 +1,6 @@
 import { NextRouter, useRouter } from 'next/router'
 import { useState, createContext, ReactNode, Dispatch, SetStateAction, useEffect, useContext } from 'react';
-import Api from "../services/api";
+import Api from "@/services/api";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Context as ContextPage } from "@/context/pageContext";
@@ -26,7 +26,6 @@ interface IContext {
     registerContact: (data: ContactDataRegister) => void;
     deleteContact: (id: string) => void
     patchContact: (data: ContactDataPatch) => void
-    handleClickContact: (elem: Contacts, id: string) => void;
     deleteUser: () => void;
     patchUser: (data: UserDataPatch) => void
 }
@@ -133,10 +132,6 @@ const UserProvider = ({ children }: IUserProvider) => {
     const [user, setUser] = useState<User>({} as User);
     const router = useRouter();
 
-    const handleClickContact = (elem: Contacts) => {
-        setContact(elem)
-    };
-
     useEffect(() => {
         const ghaia_tkn = window.localStorage.getItem("ghaia-tkn");
         if (ghaia_tkn && ghaia_tkn.length > 0) {
@@ -191,7 +186,7 @@ const UserProvider = ({ children }: IUserProvider) => {
     };
 
     const patchUser = (data: ContactDataPatch) => {
-        Api.patch<ContactResponse>(`/users/update/`, data, {
+        Api.patch<UserResponse>(`/users/update/`, data, {
             headers: {
                 Authorization: `Bearer ${token}`
             }
@@ -316,7 +311,6 @@ const UserProvider = ({ children }: IUserProvider) => {
                 registerContact,
                 deleteContact,
                 patchContact,
-                handleClickContact,
                 deleteUser,
                 patchUser,
                 contactPdf,

@@ -1,4 +1,4 @@
-import { HeaderContainer, Nav, Img, Div, TitleName } from "./style"
+import { HeaderContainer, Nav, Img, Image, Div, TitleName } from "./style"
 import logo from "@/assets/image/logo/logo.svg";
 import { useContext } from "react"
 import { Context as ContextPage } from "@/context/pageContext"
@@ -6,7 +6,7 @@ import { Context as ContextUser } from "@/context/userContext"
 import { FaSignOutAlt, FaUserCircle, FaCog, FaHome, FaThLarge, FaUserAlt, FaAddressBook } from "react-icons/fa";
 
 function Header() {
-    const { dropDownProfile, handleClickdropDownProfile, router, showDropdownProfile, contact} = useContext(ContextPage)
+    const { dropDownProfile, handleClickdropDownProfile, router, showDropdownProfile, contact } = useContext(ContextPage)
     const { user } = useContext(ContextUser)
 
     return (
@@ -18,7 +18,7 @@ function Header() {
                     <div className="profile" onClick={() => handleClickdropDownProfile()}>
                         <a onClick={() => handleClickdropDownProfile()}>
                             <div className="div-img">
-                                <img src={user.avatar_url} alt="logo" />
+                                <Image src={user.avatar_url} className="img" width={50} height={50} alt="logo"/>
                             </div>
                             <div className="tooltip">
                                 <button onClick={() => router.push("/dashboard")}><FaThLarge />ㅤDashboard</button>

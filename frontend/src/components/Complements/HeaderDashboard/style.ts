@@ -104,6 +104,9 @@ export const Img = styled.img`
     width:2.8rem;
 
 `
+export const Image = styled.img`
+
+`
 export const TitleName = styled.h1`
     width: 100%;
     font-weight: 700;

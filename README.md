@@ -61,7 +61,7 @@ yarn start:dev
 yarn test
 ```
 
-<p align ='center'><a href="#--contact_list" >Voltar ao início</a></p>
+<p align ='center'><a href="#--contact-list" >Voltar ao início</a></p>
 
 ---
 
@@ -93,7 +93,7 @@ yarn ou yarn install
 yarn dev
 ```
 
-<p align ='center'><a href="#--contact_list" >Voltar ao início</a></p>
+<p align ='center'><a href="#--contact-list" >Voltar ao início</a></p>
 
 ---
 
@@ -459,7 +459,7 @@ Api também conta a rota de interação, manipulação e documentação mais det
 
 `api/`
 
-<p align ='center'><a href="#--contact_list" >Voltar ao início</a></p>
+<p align ='center'><a href="#--contact-list" >Voltar ao início</a></p>
 
 ---
 
